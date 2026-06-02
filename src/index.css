@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scrollbar-gutter: stable;
+}
+
+/* Hace que Chrome/Edge NO apliquen el fondo amarillo/blanco del autofill a los form */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0px 1000px var(--dark-color) inset !important;
+  box-shadow: 0 0 0px 1000px var(--dark-color) inset !important;
+  -webkit-text-fill-color: var(--white-color) !important;
+  caret-color: var(--white-color) !important;
+  transition: background-color 9999s ease-in-out 0s !important;
+}
