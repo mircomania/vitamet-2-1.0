@@ -1,15 +1,54 @@
+@import url('../src/styles/common/fuentes.css');
+@import url('../src/styles/common/variables.css');
+@import url('../src/styles/common/navbar.css');
+@import url('../src/styles/common/cargando.css');
+@import url('../src/styles/common/botones.css');
+@import url('../src/styles/common/footer.css');
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 html {
-  scrollbar-gutter: stable;
+    scrollbar-gutter: stable;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+.landing-page-container {
+    overflow: hidden;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.fondo-1 {
+    background-image: linear-gradient(to left, var(--secondary-color), var(--background-color));
+    background-image: linear-gradient(
+        135deg,
+        var(--background-color) 0%,
+        transparent 10%,
+        transparent 20%,
+        var(--secondary-color) 30%,
+        var(--secondary-color) 30%,
+        transparent 40%,
+        transparent 50%,
+        var(--secondary-color) 60%
+    );
+    background-size: 100% 150%;
+    animation: moveBackground 15s ease-in-out infinite alternate;
 }
 
 /* Hace que Chrome/Edge NO apliquen el fondo amarillo/blanco del autofill a los form */
@@ -17,9 +56,9 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0px 1000px var(--dark-color) inset !important;
-  box-shadow: 0 0 0px 1000px var(--dark-color) inset !important;
-  -webkit-text-fill-color: var(--white-color) !important;
-  caret-color: var(--white-color) !important;
-  transition: background-color 9999s ease-in-out 0s !important;
+    -webkit-box-shadow: 0 0 0px 1000px var(--dark-color) inset !important;
+    box-shadow: 0 0 0px 1000px var(--dark-color) inset !important;
+    -webkit-text-fill-color: var(--white-color) !important;
+    caret-color: var(--white-color) !important;
+    transition: background-color 9999s ease-in-out 0s !important;
 }

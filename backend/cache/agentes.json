@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "data": [
+    {
+      "nombre": "Maria Teresa Duran Flores",
+      "cargo": "Asesor Especialisado En Soluciones",
+      "correo": "mayteduran.vitamet@gmail.com",
+      "status": "Inactivo",
+      "telefono": 4776503500,
+      "whatsapp": "+524776503500",
+      "exp": 4,
+      "clientes": 666,
+      "path": "maria-teresa-duran-flores",
+      "foto": "https://i.ibb.co/jPbzq9Ht/69151d0ba61e.png"
+    }
+  ]
+}

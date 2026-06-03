@@ -1,4 +1,4 @@
-import { Suspense } from 'react';
+import { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
 import { Navbar } from './components/common/Navbar';
@@ -7,6 +7,8 @@ import { Home } from './components/pages/Home';
 
 import { Cargando } from './components/utils/Cargando';
 import { ScrollToTop } from './utils/ScrollToTop';
+
+const AgentePage = lazy(() => import('./components/pages/AgentePage'));
 
 function App() {
     return (
@@ -24,6 +26,7 @@ function App() {
             >
                 <Routes>
                     <Route path="/" element={<Home />} />
+                    <Route path="/agentes/:slug" element={<AgentePage />}></Route>
                 </Routes>
             </Suspense>
 

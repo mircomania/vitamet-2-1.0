@@ -1,0 +1,48 @@
+.boton-1 {
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 4px 10px var(--shadow-color);
+    background-image: linear-gradient(to left, var(--background-color), var(--secondary-color));
+    transition: all 0.3s ease-in-out;
+    color: white;
+    border: white 2px solid;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 5px 20px;
+}
+
+.boton-1:hover {
+    transform: scale(0.95);
+    box-shadow: 0 4px 10px white;
+}
+
+@media (min-width: 576px) {
+    .boton-1 {
+        padding: 10px 40px;
+    }
+}
+
+@media (min-width: 768px) {
+    .boton-1 {
+        padding: 10px 60px;
+    }
+}
+
+@media (min-width: 992px) {
+    .boton-1 {
+        padding: 10px 80px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .boton-1 {
+        font-size: 25px;
+        padding: 10px 100px;
+    }
+}
+
+@media (min-width: 1700px) {
+    .boton-1 {
+        padding: 10px 120px;
+    }
+}

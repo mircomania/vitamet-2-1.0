@@ -1,0 +1,11 @@
+.light-text {
+    font-family: 'Montserrat', serif;
+    text-shadow: 2px 2px 4px var(--shadow-color);
+    font-weight: 400;
+}
+
+.bold-text {
+    font-family: 'Radio Canada', sans-serif;
+    text-shadow: 2px 2px 4px var(--shadow-color);
+    font-weight: 700;
+}

@@ -1,0 +1,43 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px var(--shadow-color);
+    background-image: url('/src/assets/images/baner-navbar.webp');
+}
+
+.navbar img {
+    margin-top: 5px;
+    width: 200px;
+}
+
+@media (min-width: 576px) {
+    .navbar img {
+        width: 150px;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar img {
+        width: 100px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar img {
+        margin-top: 10px;
+        width: 150px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .navbar img {
+        width: 200px;
+    }
+}
+
+@media (min-width: 1700px) {
+    .navbar img {
+        width: 300px;
+    }
+}
