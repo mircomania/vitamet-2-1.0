@@ -2,12 +2,12 @@ import styles from '../../styles/modules/agentePage.module.css';
 
 import imgLlamada from '../../assets/images/llamada.webp';
 import imgEmail from '../../assets/images/correo.webp';
-import imgCheck from '../../assets/images/check.webp';
 
 import { Spinner } from '../../assets/icons/Spinner';
 import { IconoCompartir } from '../../assets/icons/Compartir';
 import { IconoCopiar } from '../../assets/icons/Copiar';
 import { IconoWhatsApp } from '../../assets/icons/Whatsapp';
+import { IconoCheck } from '../../assets/icons/Check';
 
 import { useParams } from 'react-router-dom';
 
@@ -43,7 +43,7 @@ function AgentePage() {
     }
 
     return (
-        <main className="fondo-1">
+        <main className={styles.fondo}>
             <TitleSEO
                 title={`${agente.nombre} | Vitamet`}
                 description="Los mejores agentes del mundo"
@@ -57,9 +57,11 @@ function AgentePage() {
                     </button>
 
                     <div className={styles.agenteContainer}>
-                        <h1 className="bold-text">{agente.nombre}</h1>
+                        <div>
+                            <h2 className="bold-text">{agente.cargo}</h2>
+                        </div>
 
-                        <h2 className="light-text">{agente.cargo}</h2>
+                        <h1 className="bold-text">{agente.nombre}</h1>
                     </div>
 
                     <img src={agente.foto} loading="lazy" alt={`Foto de ${agente.nombre}`} />
@@ -74,27 +76,36 @@ function AgentePage() {
 
                         <div className={`light-text ${styles.experienciaContainer}`}>
                             <div className={styles.expDetail}>
-                                <h3>+{agente.exp}</h3>
-                                <p>AÑOS EXP</p>
+                                <p>EXPERIENCIA</p>
+                                <h3>+{agente.exp} Años</h3>
                             </div>
 
                             <div className={styles.expDetail}>
-                                <h3>+{agente.clientes}</h3>
                                 <p>CLIENTES</p>
+                                <h3>+{agente.clientes}</h3>
                             </div>
 
                             <div className={styles.expDetail}>
+                                <p>ESTATUS</p>
                                 <h3>{agente.status}</h3>
-                                <p>STATUS</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div className={styles.canalesContainer}>
-                    <h3 className="light-text">Canales de Atención</h3>
+                    <h3 className="light-text">CANALES DE ATENCIÓN</h3>
 
                     <div className={`light-text ${styles.contactoContainer}`}>
+                        <a href={`tel:${agente.telefono}`} className={styles.contactoDetail} data-cta="agente-llamar-btn">
+                            <img src={imgLlamada} alt="icono WhatsApp" />
+
+                            <div>
+                                <p>Llamar Ahora</p>
+                                <h4>Llamar</h4>
+                            </div>
+                        </a>
+
                         <WhatsAppButton
                             className={styles.contactoDetail}
                             phone={agente.whatsapp}
@@ -103,19 +114,19 @@ function AgentePage() {
                         >
                             <IconoWhatsApp className={styles.botonWhatsapp} />
 
-                            <p>WhatsApp</p>
+                            <div>
+                                <p>Mensaje directo</p>
+                                <h4>WhatsApp</h4>
+                            </div>
                         </WhatsAppButton>
-
-                        <a href={`tel:${agente.telefono}`} className={styles.contactoDetail} data-cta="agente-llamar-btn">
-                            <img src={imgLlamada} alt="icono WhatsApp" />
-
-                            <p>Llamar Ahora</p>
-                        </a>
 
                         <a href={`mailto:${agente.correo}`} className={styles.contactoDetail} data-cta="agente-correo-btn">
                             <img src={imgEmail} alt="icono WhatsApp" />
 
-                            <p>Enviar correo</p>
+                            <div>
+                                <p>Enviar correo</p>
+                                <h4>Email</h4>
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -137,7 +148,7 @@ function AgentePage() {
                     <div className={` light-text ${styles.palomas}`}>
                         {PalomasAgentes.map((paloma) => (
                             <div key={paloma.id} className={styles.paloma}>
-                                <img src={imgCheck} alt={paloma.texto} />
+                                <IconoCheck className={styles.check} />
 
                                 <p>{paloma.texto}</p>
                             </div>
