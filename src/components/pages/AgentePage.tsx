@@ -20,7 +20,7 @@ import { PalomasAgentes } from '../utils/PalomasAgente';
 import { useAgente } from '../../hooks/useAgente';
 import { useShare } from '../../hooks/useShare';
 
-const AgentePage = () => {
+function AgentePage() {
     const { slug } = useParams();
 
     const { agente, error } = useAgente(slug);
@@ -45,7 +45,7 @@ const AgentePage = () => {
     return (
         <main className="fondo-1">
             <TitleSEO
-                title={agente.nombre}
+                title={`${agente.nombre} | Vitamet`}
                 description="Los mejores agentes del mundo"
                 canonical={`https://proconsultores.com.mx/agentes/${agente.path}`}
             />
@@ -147,6 +147,6 @@ const AgentePage = () => {
             </section>
         </main>
     );
-};
+}
 
 export default AgentePage;

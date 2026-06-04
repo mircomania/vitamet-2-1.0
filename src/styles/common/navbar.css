@@ -3,7 +3,6 @@
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 10px var(--shadow-color);
-    background-image: url('/src/assets/images/baner-navbar.webp');
 }
 
 .navbar img {
