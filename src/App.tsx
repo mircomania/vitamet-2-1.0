@@ -26,6 +26,7 @@ function App() {
             >
                 <Routes>
                     <Route path="/" element={<Home />} />
+                    <Route path="/politica-privacidad" element={<Home />} />
                     <Route path="/agentes/:slug" element={<AgentePage />}></Route>
                 </Routes>
             </Suspense>

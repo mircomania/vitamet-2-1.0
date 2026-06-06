@@ -49,43 +49,13 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    min-height: calc(100vh - 222px);
+    min-height: calc(100dvh - 190px);
     background-color: var(--dark-color);
     overflow: hidden;
 }
 
-@media (min-width: 576px) {
-    .cargando {
-        min-height: calc(100vh - 196px);
-    }
-}
-
-@media (min-width: 768px) {
-    .cargando {
-        min-height: calc(100vh - 186px);
-    }
-}
-
 @media (min-width: 992px) {
     .cargando {
-        min-height: calc(100vh - 160px);
-    }
-}
-
-@media (min-width: 1200px) {
-    .cargando {
-        min-height: calc(100vh - 191px);
-    }
-}
-
-@media (min-width: 1400px) {
-    .cargando {
-        min-height: calc(100vh - 217px);
-    }
-}
-
-@media (min-width: 1700px) {
-    .cargando {
-        min-height: calc(100vh - 270px);
+        min-height: calc(100dvh - 226px);
     }
 }

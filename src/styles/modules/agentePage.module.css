@@ -250,7 +250,7 @@
     }
 
     .agenteContainer {
-        width: 460px;
+        width: 510px;
         grid-area: agente;
     }
 
@@ -277,7 +277,7 @@
     .expDetail {
         align-items: start;
         padding: 10px 15px;
-        width: 143px;
+        width: 160px;
     }
 
     .expDetail h3 {
@@ -298,12 +298,12 @@
     }
 
     .contactoDetail {
-        width: 250px;
+        width: 267px;
         padding: 20px;
     }
 
     .perfilContainer {
-        width: 800px;
+        width: 850px;
     }
 
     .palomas {

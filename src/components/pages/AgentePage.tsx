@@ -135,14 +135,14 @@ function AgentePage() {
                     <h3>Perfil Profesional</h3>
 
                     <p>
-                        Especialista en planeación patrimonial enfocada en el aprovechamiento estratégico de créditos Infonavit. Mi experiencia se
-                        centra en la lectura, análisis e interpretación de los programas, brindando asesoría clara, transparente y personalizada para
-                        que cada cliente tome decisiones financieras inteligentes y seguras.
+                        Especialista en la planeación financiera y protección del patrimonio a través de seguros de vida y gastos médicos mayores. Mi
+                        enfoque está en analizar cada situación de forma personalizada para ofrecer soluciones que brinden seguridad, estabilidad y
+                        respaldo ante cualquier imprevisto.
                     </p>
 
                     <p>
-                        Acompaño a cada persona durante todo el proceso, desde la evaluación de su perfil hasta la correcta aplicación del crédito,
-                        asegurando un trámite ágil y enfocado en maximizar su beneficio y fortalecer su patrimonio.
+                        Acompaño a cada cliente en la elección del plan adecuado, asegurando claridad en cada detalle y construyendo estrategias que
+                        protejan su futuro y el de su familia.
                     </p>
 
                     <div className={` light-text ${styles.palomas}`}>
