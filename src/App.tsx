@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 
 import { Navbar } from './components/common/Navbar';
 import { Footer } from './components/common/Footer';
-import { Home } from './components/pages/Home';
+import { HomePage } from './components/pages/HomePage';
 
 import { Cargando } from './components/utils/Cargando';
 import { ScrollToTop } from './utils/ScrollToTop';
@@ -25,8 +25,8 @@ function App() {
                 }
             >
                 <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/politica-privacidad" element={<Home />} />
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="/politica-privacidad" element={<HomePage />} />
                     <Route path="/agentes/:slug" element={<AgentePage />}></Route>
                 </Routes>
             </Suspense>

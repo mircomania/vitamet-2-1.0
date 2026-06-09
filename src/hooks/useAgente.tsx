@@ -20,7 +20,7 @@ export function useAgente(slug?: string) {
                 setError(false);
 
                 /* fetch(`http://localhost:5000/api/agente/${slug}`) fetch(`/api/agente/${slug}`)*/
-                const response = await fetch(`http://localhost:5000/api/agente/${slug}`);
+                const response = await fetch(`/api/agente/${slug}`);
 
                 if (!response.ok) {
                     throw new Error();

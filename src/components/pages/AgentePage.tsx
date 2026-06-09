@@ -47,7 +47,7 @@ function AgentePage() {
             <TitleSEO
                 title={`${agente.nombre} | Vitamet`}
                 description="Los mejores agentes del mundo"
-                canonical={`https://proconsultores.com.mx/agentes/${agente.path}`}
+                canonical={`https://vitamet.com.mx/agentes/${agente.path}`}
             />
 
             <section className={styles.sectionContainer}>
