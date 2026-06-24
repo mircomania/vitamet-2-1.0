@@ -1,4 +1,4 @@
-import type { Agente } from '../types/Agente';
+import type { Agente } from '../types/agente';
 
 export function useShare(agente: Agente | null) {
     const copyLink = () => {

@@ -1,4 +1,4 @@
-export interface Agente {
+export interface agente {
     nombre: string;
     cargo: string;
     correo: string;

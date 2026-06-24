@@ -6,7 +6,7 @@ import { Footer } from './components/common/Footer';
 import { HomePage } from './components/pages/HomePage';
 
 import { Cargando } from './components/utils/Cargando';
-import { ScrollToTop } from './utils/ScrollToTop';
+import { ScrollToTop } from './utils/scrollToTop';
 
 const AgentePage = lazy(() => import('./components/pages/AgentePage'));
 

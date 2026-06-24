@@ -1,6 +1,6 @@
-import type { IconProps } from '../../types/IconProps';
+import type { iconProps } from '../../types/iconProps';
 
-export function IconoCompartir({ className = '' }: IconProps) {
+export function IconoCompartir({ className = '' }: iconProps) {
     return (
         <svg
             viewBox="0 0 24 24"

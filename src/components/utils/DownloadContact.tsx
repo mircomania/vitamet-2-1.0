@@ -2,7 +2,7 @@ import { useMemo, useEffect, type ReactNode } from 'react';
 
 import imgAgregar from '../../assets/images/agregar.webp';
 
-import type { Agente } from '../../types/Agente';
+import type { Agente } from '../../types/agente';
 
 type DownloadContactProps = {
     agente: Agente;

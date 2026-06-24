@@ -1,14 +1,14 @@
 import { useEffect, useState } from 'react';
 
-import type { Agente } from '../types/Agente';
+import type { agente } from '../types/agente';
 
 type ApiResponse = {
     success: boolean;
-    data: Agente;
+    data: agente;
 };
 
 export function useAgente(slug?: string) {
-    const [agente, setAgente] = useState<Agente | null>(null);
+    const [agente, setAgente] = useState<agente | null>(null);
     const [error, setError] = useState(false);
 
     useEffect(() => {

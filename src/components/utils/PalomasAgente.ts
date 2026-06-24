@@ -1,4 +1,4 @@
-export const PalomasAgentes = [
+export const palomasAgentes = [
     { id: 1, texto: 'Seguros de Vida' },
     { id: 2, texto: 'Ahorro para el Retiro' },
     { id: 3, texto: 'Gastos Medicos' },

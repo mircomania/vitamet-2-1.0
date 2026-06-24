@@ -1,6 +1,6 @@
-import type { IconProps } from '../../types/IconProps';
+import type { iconProps } from '../../types/iconProps';
 
-export function IconoCopiar({ className = '' }: IconProps) {
+export function IconoCopiar({ className = '' }: iconProps) {
     return (
         <svg
             viewBox="0 0 24 24"

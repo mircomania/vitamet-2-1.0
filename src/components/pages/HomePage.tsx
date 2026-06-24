@@ -1,9 +1,15 @@
-import styles from '../../styles/modules/homePage.module.css';
+import { SectionHm1 } from '../exports/SectionHm1';
+import { SectionHm2 } from '../exports/SectionHm2';
+import { SectionHm3 } from '../exports/SectionHm3';
 
 export function HomePage() {
     return (
-        <main className={styles.pageContainer}>
-            <h1 className="bold-text">SITIO EN MANTENCIÓN</h1>
+        <main>
+            <SectionHm1 />
+
+            <SectionHm2 />
+
+            <SectionHm3 />
         </main>
     );
 }

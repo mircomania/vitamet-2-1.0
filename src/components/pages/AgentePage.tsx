@@ -15,7 +15,7 @@ import { TitleSEO } from '../../utils/TitleSEO';
 import { ErrorCarga } from '../utils/ErrorCarga';
 import { WhatsAppButton } from '../utils/WhatsAppButton';
 import { DownloadContact } from '../utils/DownloadContact';
-import { PalomasAgentes } from '../utils/PalomasAgente';
+import { PalomasAgentes } from '../utils/palomasAgente';
 
 import { useAgente } from '../../hooks/useAgente';
 import { useShare } from '../../hooks/useShare';

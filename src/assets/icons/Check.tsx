@@ -1,6 +1,6 @@
-import type { IconProps } from '../../types/IconProps';
+import type { iconProps } from '../../types/iconProps';
 
-interface IconoCheckProps extends IconProps {
+interface IconoCheckProps extends iconProps {
     circleColor?: string;
     checkColor?: string;
 }
