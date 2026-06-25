@@ -1,9 +1,11 @@
 import { BurgerIcon } from '../../assets/icons/BurgerIcon';
 import logo from '../../assets/images/logo.svg';
 
+import { useBurgerMenu } from '../../hooks/useBurgerMenu';
+
 import { navbarMenu } from '../utils/navbarMenu';
 import { NavItems } from '../utils/NavItems';
-import { useBurgerMenu } from '../../hooks/useBurgerMenu';
+import { BotonNav } from '../utils/BotonNav';
 
 export const BurgerMenu = () => {
     const { isOpen, toggleMenu, closeMenu, menuRef } = useBurgerMenu();
@@ -20,7 +22,7 @@ export const BurgerMenu = () => {
             </button>
 
             <div id="mobile-menu" className={`mobile-nav-menu ${isOpen ? 'open' : ''}`}>
-                <ul>
+                <ul className="inter-light">
                     {navbarMenu.map((item) => (
                         <li key={item.id}>
                             <NavItems item={item} onAfterNavigate={closeMenu} />
@@ -28,7 +30,12 @@ export const BurgerMenu = () => {
                     ))}
                 </ul>
 
-                <img className="logo-burger" src={logo} alt="Logotipo de Doctora Stefany Quintero Ortodoncia" loading="lazy" decoding="async" />
+                <div className="bottom-burger-container">
+                    <BotonNav to="/unete" className="boton-nav" dataCta="burger-unete-btn">
+                        Únete
+                    </BotonNav>
+                    <img className="logo-burger" src={logo} alt="Logotipo de Doctora Stefany Quintero Ortodoncia" loading="lazy" decoding="async" />
+                </div>
             </div>
         </nav>
     );
