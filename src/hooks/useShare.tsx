@@ -1,6 +1,6 @@
-import type { Agente } from '../types/agente';
+import type { agente } from '../types/agente';
 
-export function useShare(agente: Agente | null) {
+export function useShare(agente: agente | null) {
     const copyLink = () => {
         navigator.clipboard.writeText(window.location.href);
     };

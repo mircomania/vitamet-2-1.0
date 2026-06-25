@@ -15,7 +15,7 @@ import { TitleSEO } from '../../utils/TitleSEO';
 import { ErrorCarga } from '../utils/ErrorCarga';
 import { WhatsAppButton } from '../utils/WhatsAppButton';
 import { DownloadContact } from '../utils/DownloadContact';
-import { PalomasAgentes } from '../utils/palomasAgente';
+import { palomasAgentes } from '../utils/palomasAgente';
 
 import { useAgente } from '../../hooks/useAgente';
 import { useShare } from '../../hooks/useShare';
@@ -146,7 +146,7 @@ function AgentePage() {
                     </p>
 
                     <div className={` light-text ${styles.palomas}`}>
-                        {PalomasAgentes.map((paloma) => (
+                        {palomasAgentes.map((paloma) => (
                             <div key={paloma.id} className={styles.paloma}>
                                 <IconoCheck className={styles.check} />
 

@@ -2,10 +2,10 @@ import { useMemo, useEffect, type ReactNode } from 'react';
 
 import imgAgregar from '../../assets/images/agregar.webp';
 
-import type { Agente } from '../../types/agente';
+import type { agente } from '../../types/agente';
 
 type DownloadContactProps = {
-    agente: Agente;
+    agente: agente;
     filename?: string;
     className?: string;
     children?: ReactNode;
@@ -43,15 +43,4 @@ END:VCARD`,
             {children || 'Guardar contacto'}
         </a>
     );
-}
-
-{
-    /* <DownloadContact
-    nombre={agente.nombre}
-    cargo={agente.cargo}
-    telefono={agente.telefono}
-    correo={agente.correo}
-    filename={agente.path}
-    className="contact-button"
-/> */
 }
