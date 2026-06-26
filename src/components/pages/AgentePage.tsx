@@ -52,29 +52,24 @@ function AgentePage() {
 
             <section className={styles.sectionContainer}>
                 <div className={styles.cardContainer}>
-                    <button className={`light-text ${styles.botonShared}`} onClick={canShare ? compartir : copyLink} data-cta="agente-shared-btn">
+                    <button className={styles.botonShared} onClick={canShare ? compartir : copyLink} data-cta="agente-shared-btn">
                         {canShare ? <IconoCompartir className={styles.iconoShared} /> : <IconoCopiar className={styles.iconoShared} />}
                     </button>
 
                     <div className={styles.agenteContainer}>
                         <div>
-                            <h2 className="bold-text">{agente.cargo}</h2>
+                            <h2>{agente.cargo}</h2>
                         </div>
 
-                        <h1 className="bold-text">{agente.nombre}</h1>
+                        <h1>{agente.nombre}</h1>
                     </div>
 
                     <img src={agente.foto} loading="lazy" alt={`Foto de ${agente.nombre}`} />
 
                     <div className={styles.infoContainer}>
-                        <DownloadContact
-                            className={`${styles.vcard} light-text`}
-                            agente={agente}
-                            filename={agente.path}
-                            dataCta="agente-guardar-btn"
-                        />
+                        <DownloadContact className={styles.vcard} agente={agente} filename={agente.path} dataCta="agente-guardar-btn" />
 
-                        <div className={`light-text ${styles.experienciaContainer}`}>
+                        <div className={styles.experienciaContainer}>
                             <div className={styles.expDetail}>
                                 <p>EXPERIENCIA</p>
                                 <h3>+{agente.exp} Años</h3>
@@ -94,9 +89,9 @@ function AgentePage() {
                 </div>
 
                 <div className={styles.canalesContainer}>
-                    <h3 className="light-text">CANALES DE ATENCIÓN</h3>
+                    <h3>CANALES DE ATENCIÓN</h3>
 
-                    <div className={`light-text ${styles.contactoContainer}`}>
+                    <div className={styles.contactoContainer}>
                         <a href={`tel:${agente.telefono}`} className={styles.contactoDetail} data-cta="agente-llamar-btn">
                             <img src={imgLlamada} alt="icono WhatsApp" />
 
@@ -131,7 +126,7 @@ function AgentePage() {
                     </div>
                 </div>
 
-                <div className={` light-text ${styles.perfilContainer}`}>
+                <div className={styles.perfilContainer}>
                     <h3>Perfil Profesional</h3>
 
                     <p>
@@ -145,7 +140,7 @@ function AgentePage() {
                         protejan su futuro y el de su familia.
                     </p>
 
-                    <div className={` light-text ${styles.palomas}`}>
+                    <div className={styles.palomas}>
                         {palomasAgentes.map((paloma) => (
                             <div key={paloma.id} className={styles.paloma}>
                                 <IconoCheck className={styles.check} />

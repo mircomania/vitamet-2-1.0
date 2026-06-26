@@ -22,7 +22,7 @@ export const BurgerMenu = () => {
             </button>
 
             <div id="mobile-menu" className={`mobile-nav-menu ${isOpen ? 'open' : ''}`}>
-                <ul className="inter-light">
+                <ul>
                     {navbarMenu.map((item) => (
                         <li key={item.id}>
                             <NavItems item={item} onAfterNavigate={closeMenu} />

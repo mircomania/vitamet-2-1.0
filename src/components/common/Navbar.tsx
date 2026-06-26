@@ -19,7 +19,7 @@ export const Navbar = () => {
                 </SmartLink>
 
                 {!isMobile && (
-                    <ul className="navbar-menu inter-light">
+                    <ul className="navbar-menu">
                         {navbarMenu.map((item) => (
                             <li key={item.id}>
                                 <NavItems item={item} />

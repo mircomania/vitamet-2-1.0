@@ -14,22 +14,37 @@
     font-display: swap;
 }
 
-.hanken-light {
-    font-family: 'Hanken Grotesk', sans-serif;
+:root {
+    --font-heading: 'Hanken Grotesk', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+.font-heading {
+    font-family: var(--font-heading);
+}
+
+.font-body {
+    font-family: var(--font-body);
+}
+
+body {
+    font-family: var(--font-body);
     font-weight: 400;
 }
 
-.hanken-bold {
-    font-family: 'Hanken Grotesk', sans-serif;
-    font-weight: 700;
+button,
+input,
+textarea,
+select {
+    font: inherit;
 }
 
-.inter-light {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-}
-
-.inter-bold {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    font-weight: 600;
 }
