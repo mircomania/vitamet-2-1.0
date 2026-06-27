@@ -90,6 +90,12 @@
     }
 }
 
+@media (min-width: 1200px) {
+    .footer-contenido a:hover {
+        color: var(--skyblue-color);
+    }
+}
+
 @media (min-width: 1700px) {
     .footer-contenido {
         gap: 50px;

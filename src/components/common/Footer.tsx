@@ -4,7 +4,7 @@ import { enlacesRapidos, legal } from '../utils/footerContenido';
 import { datosContacto } from '../utils/datosContacto';
 import { NavItems } from '../utils/NavItems';
 
-import logo from '../../assets/images/logo-blanco.svg';
+import logo from '../../assets/images/common/logo-blanco.svg';
 
 export function Footer() {
     return (

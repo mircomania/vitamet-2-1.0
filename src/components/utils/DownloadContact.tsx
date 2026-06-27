@@ -1,6 +1,6 @@
 import { useMemo, useEffect, type ReactNode } from 'react';
 
-import imgAgregar from '../../assets/images/agregar.webp';
+import imgAgregar from '../../assets/images/agente/agregar.webp';
 
 import type { agente } from '../../types/agente';
 

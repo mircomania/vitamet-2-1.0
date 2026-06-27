@@ -1,7 +1,7 @@
 import styles from '../../styles/modules/agentePage.module.css';
 
-import imgLlamada from '../../assets/images/llamada.webp';
-import imgEmail from '../../assets/images/correo.webp';
+import imgLlamada from '../../assets/images/agente/llamada.webp';
+import imgEmail from '../../assets/images/agente/correo.webp';
 
 import { Spinner } from '../../assets/icons/Spinner';
 import { IconoCompartir } from '../../assets/icons/Compartir';

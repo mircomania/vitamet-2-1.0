@@ -1,48 +1,29 @@
 .boton-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     text-decoration: none;
-    box-shadow: 0 4px 10px var(--shadow-color);
-    background-image: linear-gradient(to left, var(--background-color), var(--secondary-color));
+    border: none;
+    background-color: var(--green-color);
+    box-shadow: -6px 4px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease-in-out;
-    color: white;
-    border: white 2px solid;
+    color: var(--black-color);
     border-radius: 10px;
-    font-size: 20px;
-    padding: 5px 20px;
+    font-size: 16px;
+    gap: 10px;
+    padding: 20px 40px;
+}
+
+.boton-1 img {
+    width: 15px;
+    z-index: 1;
 }
 
 .boton-1:hover {
-    transform: scale(0.95);
-    box-shadow: 0 4px 10px white;
+    background: var(--white-color);
 }
 
-@media (min-width: 576px) {
-    .boton-1 {
-        padding: 10px 40px;
-    }
-}
-
-@media (min-width: 768px) {
-    .boton-1 {
-        padding: 10px 60px;
-    }
-}
-
-@media (min-width: 992px) {
-    .boton-1 {
-        padding: 10px 80px;
-    }
-}
-
-@media (min-width: 1400px) {
-    .boton-1 {
-        font-size: 25px;
-        padding: 10px 100px;
-    }
-}
-
-@media (min-width: 1700px) {
-    .boton-1 {
-        padding: 10px 120px;
-    }
+.boton-1:active {
+    transform: scale(0.9);
 }

@@ -1,13 +1,90 @@
 .sectionContainer {
+    position: relative;
     display: flex;
     align-items: center;
+    justify-content: start;
+    overflow: hidden;
+    background: linear-gradient(to right, var(--blue-color) 0%, var(--skyblue-color) 100%);
+    min-height: calc(100svh - 66px);
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
     justify-content: center;
-    min-height: calc(100dvh - 190px);
-    background-color: var(--blue-color);
+    max-width: 470px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.contenido h1 {
+    color: var(--white-color);
+    font-size: 28px;
+}
+
+.contenido p {
+    font-size: 16px;
+    color: var(--white-color);
+}
+
+.contenido p:nth-child(1) {
+    background-color: var(--green-color);
+    color: var(--black-color);
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+@media (min-width: 768px) {
+    .sectionContainer {
+        justify-content: center;
+        background: linear-gradient(to right, var(--blue-color) 0%, transparent 100%);
+        min-height: 0;
+        max-height: calc(100svh - 66px);
+    }
+
+    .imgFondo {
+        display: block;
+        position: relative;
+        z-index: -1;
+        -webkit-mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+        mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+    }
+
+    .contenido {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        max-width: 670px;
+        padding: 40px;
+        gap: 30px;
+        max-height: calc(100svh - 66px);
+    }
+
+    .contenido h1 {
+        font-size: 38px;
+    }
 }
 
 @media (min-width: 992px) {
     .sectionContainer {
-        min-height: calc(100dvh - 226px);
+        max-height: calc(100svh - 76px);
+    }
+}
+
+@media (min-width: 1400px) {
+    .sectionContenido {
+        position: relative;
+        display: inline-block;
+    }
+
+    .contenido {
+        max-width: 600px;
+        padding: 40px 0;
+        gap: 30px;
     }
 }
