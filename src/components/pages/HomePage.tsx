@@ -1,12 +1,12 @@
-import { SectionHm1 } from '../exports/SectionHm1';
-import { SectionHm2 } from '../exports/SectionHm2';
+import { SectionHp1 } from '../exports/home/SectionHp1';
+import { SectionHp2 } from '../exports/home/SectionHp2';
 
 export function HomePage() {
     return (
         <main>
-            <SectionHm1 />
+            <SectionHp1 />
 
-            <SectionHm2 />
+            <SectionHp2 />
         </main>
     );
 }

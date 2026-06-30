@@ -1,11 +1,11 @@
-import styles from '../../styles/modules/sectionHm1.module.css';
-import imgFondo from '../../assets/images/home/fondo-home.png';
-import imgFlecha from '../../assets/images/home/flecha-derecha.svg';
+import styles from '../../../styles/modules/home/sectionHp1.module.css';
+import imgFondo from '../../../assets/images/home/fondo-home.png';
+import imgFlecha from '../../../assets/images/home/flecha-derecha.svg';
 
-import { useMediaQuery } from '../../hooks/useMediaQuery';
-import { BotonNav } from '../utils/BotonNav';
+import { useMediaQuery } from '../../../hooks/useMediaQuery';
+import { BotonNav } from '../../utils/BotonNav';
 
-export const SectionHm1 = () => {
+export const SectionHp1 = () => {
     const isMobile = useMediaQuery('(max-width: 767px)');
 
     return (
