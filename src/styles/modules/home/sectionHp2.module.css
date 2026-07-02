@@ -47,6 +47,7 @@
 }
 
 .paloma img {
+    box-shadow: -6px 4px 10px rgba(0, 0, 0, 0.2);
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -73,6 +74,7 @@
 
 .imagen1 div,
 .imagen2 div {
+    box-shadow: -6px 4px 10px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -160,6 +162,7 @@
 
     .imagen1 img,
     .imagen2 img {
+        box-shadow: -6px 4px 10px rgba(0, 0, 0, 0.2);
         border-radius: 10px;
     }
 

@@ -6,12 +6,12 @@ import { useMediaQuery } from '../../../hooks/useMediaQuery';
 import { BotonNav } from '../../utils/BotonNav';
 
 export const SectionHp1 = () => {
-    const isMobile = useMediaQuery('(max-width: 767px)');
+    const isMobile = useMediaQuery('(max-width: 575px)');
 
     return (
         <section className={styles.sectionContainer}>
             <div className={styles.sectionContenido}>
-                {!isMobile && <img src={imgFondo} className={styles.imgFondo} alt="" />}
+                {!isMobile && <img src={imgFondo} className={styles.imgFondo} alt="Fondo de la sección" />}
 
                 <div className={styles.contenido}>
                     <p>OPORTUNIDAD DE CARRERA</p>
@@ -21,7 +21,7 @@ export const SectionHp1 = () => {
                     <p>Vive con libertad, construye tu futuro y cambia tu vida. Somos los socios comerciales más importantes de MetLife México.</p>
 
                     <BotonNav to="/unete" className="boton-1" dataCta="home-unete-btn-1">
-                        APLICAR AHORA <img src={imgFlecha} alt="" />
+                        APLICAR AHORA <img src={imgFlecha} alt="Flecha en dirección hacia la derecha" />
                     </BotonNav>
                 </div>
             </div>

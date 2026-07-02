@@ -1,4 +1,4 @@
-import styles from '../../styles/modules/sectionHm1.module.css';
+import styles from '../../../styles/modules/home/sectionHp3.module.css';
 
 export const SectionHp3 = () => {
     return (
