@@ -1,11 +1,15 @@
 import styles from '../../../styles/modules/home/sectionHp2.module.css';
 
 import { useMediaQuery } from '../../../hooks/useMediaQuery';
+import { useScrollReveal } from '../../../hooks/useScrollReveal';
+
 import { palomasSectionHp2 } from '../../utils/palomasSectionHp2';
 import { imgsSectionHp2 } from '../../utils/imgsSectionHp2';
+import { Counter } from '../../utils/Counter';
 
 export const SectionHp2 = () => {
-    const isMovile = useMediaQuery('(max-width: 991px)');
+    const isMovile = useMediaQuery('(max-width: 767px)');
+    const { ref, isVisible } = useScrollReveal({ threshold: 0.5 });
 
     return (
         <section className={styles.sectionContainer}>
@@ -40,11 +44,13 @@ export const SectionHp2 = () => {
 
             <div className={styles.imgs}>
                 {imgsSectionHp2.map((img, index) => (
-                    <div key={img.id} className={styles.imagen}>
+                    <div key={img.id} className={styles[`imagen${index + 1}`]}>
                         {!isMovile && <img src={img.img} alt={img.texto} />}
 
                         <div className={styles[`containerImg${index + 1}`]}>
-                            <h3>+{img.titulo}</h3>
+                            <h3 ref={ref}>
+                                <Counter end={img.titulo} duration={1200} isVisible={isVisible} />
+                            </h3>
 
                             <p>{img.texto}</p>
                         </div>
